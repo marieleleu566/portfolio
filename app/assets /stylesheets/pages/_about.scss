@@ -1,0 +1,116 @@
+.about-img {
+  height: auto;
+  width: 100%;
+}
+
+.c {
+  margin: 0 60px;
+}
+
+.wagon, .poly, .psb {
+  margin-bottom: 50px;
+}
+
+.resto, .apc, .witz, .ccpr, .freelance{
+  margin-bottom: 50px;
+}
+
+.fun {
+  margin-bottom: 50px;
+}
+
+.about-about {
+  margin-bottom: 50px;
+}
+.about {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  margin-top: 30px;
+  border-bottom: 1px solid rgb(180, 180, 180);
+  p {
+    font-weight: 100;
+    font-family: $body-font;
+  }
+}
+
+.about-work {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  margin-top: 30px;
+  border-bottom: 1px solid rgb(180, 180, 180);
+  p {
+    font-weight: 100;
+    font-family: $body-font;
+  }
+}
+
+.work {
+  margin-bottom: 50px;
+}
+
+.freelance {
+  a {
+    color: black;
+    text-decoration: none;
+  }
+  a:hover {
+    color:grey;
+  }
+}
+
+.about-school {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  margin-top: 30px;
+  border-bottom: 1px solid rgb(180, 180, 180);
+  p {
+    font-weight: 100;
+    font-family: $body-font;
+  }
+}
+
+.about-fun {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  margin-top: 30px;
+  margin-bottom: 100px;
+  p {
+    font-weight: 100;
+    margin-bottom: 40px;
+    font-family: $body-font;
+  }
+}
+
+.fun-button {
+  color: black;
+  background-color: transparent;
+  border: 1px solid black;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+  font-family: $body-font;
+  font-size: 12px;
+  letter-spacing: 0.16666666666666666rem;
+  padding: 10px 25px 10px 30px;
+  &:hover {
+    border: 1px solid #ef715d;
+    background-color: #ef715d;
+    color:white;
+    text-decoration: none;
+  }
+}
+
+#myarrow {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  width:70px;
+  height:70px;
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+}
+
+

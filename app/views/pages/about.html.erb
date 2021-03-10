@@ -1,0 +1,92 @@
+<div class="MainContainer">
+<div class="c">
+  <img src="https://res.cloudinary.com/marie-leleu/image/upload/v1607953551/IMG_3307_yumckg.jpg" class="about-img">
+  <div class="about">
+    <h1>about</h1>
+    <div class="about-about">
+      <p>Hi my name is <b>Marie.</b> I was born in Paris but raised in Santa Cruz, California. I decided to move back to Paris only a few years ago to re-connect with my french roots. I've always been a creative at heart but didn't quite figure out how to channel my creativity until I started coding. What really interests me facilitating user experiences through the application of design. I'm constantly seeking to learn more, to experience more, and to apply more code in my every day life.</p>
+    </div>
+  </div>
+
+  <div class="about-work">
+    <h1>work<br>experience</h1>
+    <div class="work">
+      <div class="freelance">
+        <h5>Freelance Web Developer</h5>
+        <h6>Dec 2020 - Present | Paris, France</h6>
+        <p><a href="www.dabbynaval.com">Dabby Naval</a> | <a href="www.monsieurmacaron.com">Monsieur Macaron</a> | MarchingOrder</p>
+      </div>
+      <div class="resto">
+        <h5>Restauration</h5>
+        <h6>Feb. 2019 - Sept. 2020 | Paris, France</h6>
+        <p>Brasserie Bellanger | Jacques | Cafe Foufou</p>
+      </div>
+      <div class="apc">
+        <h5>A.P.C</h5>
+        <h6>Aug. 2018 - Dec. 2018 | Paris, France</h6>
+        <p>Assisant Community Manager</p>
+      </div>
+      <div class="witz">
+        <h5>Witz Communications</h5>
+        <h6>June 2017 - Sept. 2017 | Oakland, California</h6>
+        <p>Public Relations Intern</p>
+      </div>
+      <div class="ccpr">
+        <h5>CCPRspectives</h5>
+        <h6>Oct. 2020 - Dec. 2020 | San Luis Obispo, California</h6>
+        <p>Public Relations Agent</p>
+      </div>
+      <%= link_to "DOWNLOAD CV", 'https://www.dropbox.com/s/8usgsawgeg643zd/LELEU_Marie%20CV%202020%20.pdf?dl=0', class:"fun-button" %>
+    </div>
+  </div>
+  <div class="about-school">
+    <h1>education</h1>
+    <div class="school">
+      <div class="wagon">
+        <h5>Le Wagon</h5>
+        <h6>Oct. 2020 - Dec. 2020 | Paris, France</h6>
+        <p>Formation Full-Stack Web Development</p>
+      </div>
+      <div class="psb">
+        <h5>Paris School Of Business</h5>
+        <h6>Sept. 2017 - May 2018 | Paris, France</h6>
+        <p>Master of Luxury & Fashion Marketing</p>
+      </div>
+      <div class="poly">
+        <h5>California Polytechnic State University</h5>
+        <h6>Sept. 2013 - June 2017 | San Luis Obispo, Califonia</h6>
+        <p>Bachelor Degree in Journalism + Woman's & Gender Studies</p>
+      </div>
+    </div>
+  </div>
+  <div class="about-fun">
+    <h1>hobbies</h1>
+    <div class="fun">
+      <p>Sometimes, I have to take a break from coding. When that occurs I enjoy painting watercolor cards, shooting film photography for friends but also on occasion for musicians, and tending to the numerous plants I have accumulated over the years. As well as taking my 3 year old pug on walks. </p>
+      <%= link_to "LETS GET CREATIVE", '/fun', class:"fun-button" %>
+    </div>
+  </div>
+<img src="https://res.cloudinary.com/marie-leleu/image/upload/v1608138659/up-arrow_ln7ulg.png" onclick="topFunction()" id="myarrow" title="Go to top">
+</div>
+</div>
+<script>
+//Get the button
+var myarrow = document.getElementById("myarrow");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    myarrow.style.display = "block";
+  } else {
+    myarrow.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
