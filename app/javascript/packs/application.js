@@ -17,11 +17,7 @@ import 'bootstrap';
 // const images = require.context('../images', true)
 // const imagePath = (name) => images(name, true)
 
-import { drip } from "../components/navbar";
-
-
 document.addEventListener('turbolinks:load', () => {
-  drip();
   // Call your functions here, e.g:
   // initSelect2();
 });

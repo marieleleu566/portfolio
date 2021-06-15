@@ -1,15 +1,14 @@
 <!-- <div class="viewport"> -->
 
-  <header class="header" role="banner">
 
-    <nav id="nav" class="nav" role="navigation">
+   <!--  <nav id="nav" class="nav" role="navigation"> -->
 
       <!-- ACTUAL NAVIGATION MENU -->
    <!--    <ul class="nav__menu" id="menu" tabindex="-1" aria-label="main navigation" hidden> -->
-        <a href="#" class="navlink"><%= link_to "home", '/', class:"nav__link" %></a>
+        <!-- <a href="#" class="navlink"><%= link_to "home", '/', class:"nav__link" %></a>
         <a href="#" class="navlink"><%= link_to "about", '/about', class:"nav__link active" %></a>
         <a href="#" class="navlink"><%= link_to "photography", '/photography', class:"nav__link" %></a>
-        <a href="#" class="navlink"><%= link_to "contact", '/contact/new', class:"nav__link" %></a>
+        <a href="#" class="navlink"><%= link_to "contact", '/contact/new', class:"nav__link" %></a> -->
 <!--       </ul> -->
 
       <!-- MENU TOGGLE BUTTON -->
@@ -29,8 +28,18 @@
       <!-- ANIMATED BACKGROUND ELEMENT -->
 <!--       <div class="splash"></div> -->
 
-    </nav>
+<!--     </nav>
 
-  </header>
+  </header> -->
 <!-- </div> -->
+  <header class="header" role="banner">
 
+      <div class="navigation">
+        <ul class="navigation">
+        <a href="#" class="navlink"><%= link_to "portfolio", '/photography', class:"nav__link" %></a><br><br>
+        <a href="#" class="navlink"><%= link_to "about", '/about', class:"nav__link active" %></a>
+        <a href="#" class="navlink"><%= link_to "contact", '/contact/new', class:"nav__link" %></a>
+        </ul>
+      </div>
+
+    </header>
