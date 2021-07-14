@@ -3,6 +3,7 @@ body {
   background: radial-gradient(50% 50% at 50% 50%, rgba(238, 174, 202, 0.4) 42.97%, rgba(148, 187, 233, 0.51) 100%);
   min-height: calc(100vh);
   cursor: url('cursor1.png'), auto;
+  overflow: hidden;
 }
 
 
@@ -13,20 +14,31 @@ body {
   z-index: 1000;
 }
 
-.background-text {
+.hello {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: white;
-  opacity: 60%;
-  font-family: Antonio;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 850px;
-  line-height: 0px;
-  letter-spacing: -0.07em;
-  text-transform: uppercase;
-  position: absolute;
-  bottom: 0;
+  p {
+    opacity: 60%;
+    position: absolute;
+    bottom: 420px;
+    margin-bottom: 0px;
+    font-family: Antonio;
+    font-size: 45vw;
+    line-height: 0px;
+    letter-spacing: 1.5rem;
+    text-transform: uppercase;
+  }
 }
 
 .gradient {
+  z-index: 1000;
   position: relative;
+  display:flex;
+  justify-content: flex-start;
+  padding: 110px 100px 100px 150px;
+  h1 {
+    font-size: 4vw;
+  }
 }
