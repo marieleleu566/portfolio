@@ -1,6 +1,26 @@
-<div class="gradient">
-  <h1 class="keepon">My name is Marie.<br>I'm a Front-End UX/UI Designer.<br>Based in — Paris. <span style='font-size: 50px; margin-bottom: 30px;'>✌🏻</span></h1>
+<% content_for :nav, render('components/navbar') %>
+
+<div class="home">
+  <div class="gradient">
+    <h1 class="keepon">My name is Marie.<br>I'm a Front-End UX/UI Designer.<br>Based in — Paris. <span style='font-size: 50px; margin-bottom: 30px;'>✌🏻</span></h1>
+  </div>
+  <div class="hello">
+    <p>hello</p>
+  </div>
 </div>
-<div class="hello">
-  <p>hello</p>
-</div>
+
+<script>
+var div = document.querySelector("body");
+  var x = 0;
+  var y = 0;
+
+div.addEventListener(
+  "mousemove", function (e) {
+  x = event.clientX;
+  y = event.clientY;
+
+  //Here we set the background color to the x & y value that the mouse has over the web page. See css part for rgb explaination
+  div.style.backgroundColor =  `hsl(${x - y}, 30%, 75%)`;
+  div.style.transition = 'background-color .5s'
+    });
+</script>

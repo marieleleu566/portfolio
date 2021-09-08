@@ -12,7 +12,11 @@
   </head>
 
   <body>
-    <%= render "components/navbar" %>
+  <% if content_for? :nav %>
+      <%= content_for :nav %>
+  <% else %>
+    <%= render 'components/menu' %>
+  <% end %>
     <%= yield %>
   </body>
 </html>

@@ -36,6 +36,9 @@
     font-weight: 100;
     font-family: $body-font;
   }
+    h1  {
+    font-family: Antonio;
+  }
 }
 
 .about-work {
@@ -43,7 +46,14 @@
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   margin-top: 30px;
   border-bottom: 1px solid white;
-  p {
+  h5 {
+    font-weight: 100;
+    font-family: 'Abril Fatface', cursive;
+  }
+  h1 {
+    font-family: Antonio;
+  }
+  p, h6 {
     font-weight: 100;
     font-family: $body-font;
   }
@@ -68,7 +78,14 @@
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   margin-top: 30px;
   border-bottom: 1px solid white;
-  p {
+  h5 {
+    font-weight: 100;
+  font-family: 'Abril Fatface', cursive;
+  }
+  h1 {
+    font-family: Antonio;
+  }
+  p, h6 {
     font-weight: 100;
     font-family: $body-font;
   }
@@ -79,9 +96,16 @@
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   margin-top: 30px;
   margin-bottom: 100px;
-  p {
+  h5 {
     font-weight: 100;
     margin-bottom: 40px;
+    font-family: 'Abril Fatface', cursive;
+  }
+  h1 {
+    font-family: Antonio;
+  }
+  p, h6 {
+    font-weight: 100;
     font-family: $body-font;
   }
 }
@@ -91,13 +115,12 @@
   background-color: transparent;
   border: 1px solid white;
   box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
-  font-family: $body-font;
+  font-family: 'Abril Fatface', cursive;;
   font-size: 12px;
   letter-spacing: 0.16666666666666666rem;
   padding: 10px 25px 10px 30px;
   &:hover {
-    border: 1px solid #ef715d;
-    background-color: #ef715d;
+    box-shadow: 1px 4px 4px 1px rgba(0, 0, 0, 0.2);
     color:white;
     text-decoration: none;
   }
