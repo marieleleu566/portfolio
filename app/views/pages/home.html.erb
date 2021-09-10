@@ -1,11 +1,12 @@
 <% content_for :nav, render('components/navbar') %>
+  <div class="hello">
+    <p>hello</p>
+  </div>
 
 <div class="home">
   <div class="gradient">
     <h1 class="keepon">My name is Marie.<br>I'm a Front-End UX/UI Designer.<br>Based in — Paris. <span style='font-size: 50px; margin-bottom: 30px;'>✌🏻</span></h1>
-  </div>
-  <div class="hello">
-    <p>hello</p>
+    <h1 class="keeponmobile">Marie,<br>Front-End UX/UI Designer.</h1>
   </div>
 </div>
 
@@ -23,4 +24,7 @@ div.addEventListener(
   div.style.backgroundColor =  `hsl(${x - y}, 30%, 75%)`;
   div.style.transition = 'background-color .5s'
     });
+
+var body = document.querySelector('body')
+body.style.overflow = 'hidden';
 </script>
